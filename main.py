@@ -2,12 +2,12 @@ from flask import render_template, request
 from app import *
 
 
-# @app.route('/users/<id>')
-# def users(id):
-#     return render_template(
-#         'index.html',
-#         name=id,
-#     )
+@app.route('/users/<id>')
+def users(id):
+    return render_template(
+        'index.html',
+        name=id,
+    )
 
 
 @app.route('/')
